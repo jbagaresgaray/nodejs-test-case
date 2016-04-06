@@ -1,0 +1,21 @@
+{
+  "name": "restApp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Philip Cesar Garay <philipgaray2@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/oneuphigher/nodejs-test-case",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
