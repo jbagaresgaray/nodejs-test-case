@@ -2,15 +2,15 @@
     <div class="col-md-5">
         <div class="form-area" style="background-color: #FAFAFA;padding: 10px 40px 60px;margin: 10px 0px 60px;border: 1px solid GREY;">
             <h1 style="margin-bottom: 25px; text-align: center;">Transactions page</h1>
-            <div class="form-group">
-                <label for="amount">Your Token:</label>
-                <textarea class="form-control" type="textarea" id="token" rows="7">
-                    <%=token%>
-                </textarea>
-            </div>
-            <form role="form">
+            <form role="form" action="/createtransaction" method="POST">
                 <br style="clear:both">
                 <h3 style="margin-bottom: 25px; text-align: center;">Create Stripe Payments</h3>
+                <div class="form-group">
+                    <label for="amount">Your Token:</label>
+                    <textarea class="form-control" type="textarea" id="token" name="token" rows="7">
+                        <%=token%>
+                    </textarea>
+                </div>
                 <div class="form-group">
                     <label for="amount">Amount:</label>
                     <input type="number" class="form-control" name="amount" id="amount" required>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="form-group">
                     <label for="cardnumber">Card number </label>
-                    <input type="text" class="form-control" name="customerid" id="cardnumber" class="card-number" required>
+                    <input type="text" class="form-control" name="cardnumber" id="cardnumber" class="card-number" required>
                 </div>
                 <div class="form-group">
                     <label for="cvc">CVC: </label>
